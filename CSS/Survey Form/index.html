@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Enter Your Name: <input type="text" id="name" required placeholder="Enter your name"/>
+      </label>
+      <label id="email-label">Enter Your Email: <input type="email" id="email" required placeholder="Enter your email" />
+      </label>
+      <label id="number-label">Enter Your Age: <input type="number" id="number" min="13" max="110" placeholder="Age" />
+      </label>
+    </fieldset>
+    <fieldset>
+      <p>Which option best describes your current role?</p> 
+        <select id="dropdown" name="role" required>
+          <option disabled selected value>Select current role</option>
+          <option value="job">Full Time Job</option>
+          <option value="part-job">Part Time Job</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset class="flex">
+      <p>Would you recommend us to a friend?</p>
+      <label>
+        <input type="radio" name="user-recommend" value="of-course" checked> Of Course!
+      </label>
+      <label>
+        <input type="radio" name="user-recommend" value="nope"> Nope
+      </label>
+      <label>
+        <input type="radio" name="user-recommend" value="not-sure"> Not sure...
+      </label>
+    </fieldset>
+    <fieldset class="flex">
+      <p>What would you like to learn?
+        <span>(Check all that apply)</span>
+      </p> 
+      <label>
+        <input type="checkbox" name="prefer" value="html"> HTML
+      </label>
+      <label>
+        <input type="checkbox" name="prefer" value="css"> CSS</label>
+      <label>
+        <input type="checkbox" name="prefer" value="javascript"> Javascript
+      </label>
+      <label>
+        <input type="checkbox" name="prefer" value="sql"> SQL
+      </label>
+      <label>
+        <input type="checkbox" name="prefer" value="node-js"> NodeJS
+      </label>
+      <label>
+        <input type="checkbox" name="prefer" value="react"> React
+      </label>
+    </fieldset>
+    <fieldset>
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+    </fieldset>
+     <input type="submit" value="Submit" id="submit"/>
+  </form>
+</body>

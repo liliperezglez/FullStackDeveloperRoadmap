@@ -1,0 +1,102 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a576819a;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el contenedor del formulario */
+  #survey-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* Estilos para los títulos */
+  #title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #9d7d7d;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para el botón de envío */
+  #submit {
+    background-color: #4c8ea9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Estilos para los checkboxes y radios */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Espaciado para los checkboxes y radios */
+  fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+  
+  /* Alineación de texto en el campo de comentarios */
+  #comments {
+    width: 100%;
+  }
+  
+  /* Estilo para los mensajes de error */
+  input:invalid {
+    border: 1px solid rgb(168, 97, 97);
+  }
+  
+  /* Estilo para el mensaje de error específico para el número */
+  input[type="number"]:invalid {
+    border: 1px solid rgb(168, 97, 97);
+  }
+  
+  /* Estilo para el mensaje de error específico para el correo electrónico */
+  input[type="email"]:invalid {
+    border: 1px solid rgb(168, 97, 97);
+  }
+  
